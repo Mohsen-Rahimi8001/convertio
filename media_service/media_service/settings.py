@@ -9,7 +9,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 SECRET_KEY = os.getenv("USER_SERVICE_DJ_SECRET_KEY")
-SECRET_KEY = "django-insecure-317aawfrpuwqlc4#01ozrv1o%+(7$pcw)f2d+gy%l#ie0fst=6"
 
 
 JWT_ALGORITHM = os.getenv("JWT_ALGORITHM")
