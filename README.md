@@ -8,9 +8,7 @@ This project is a distributed microservices-based video management and processin
 - **User Service**: Manages user registration, authentication (JWT-based), and account lifecycle events. Sends RabbitMQ messages when a user is deleted.
 - **Media Service**: Handles video uploads, ownership checks, deletion, and stores metadata in a relational database. Publishes processing tasks to RabbitMQ.
 - **Convert Service**: Listens to video processing tasks via RabbitMQ (e.g., reverse operation), performs the task using ffmpeg, and saves results to a shared volume.
-- **Notification Service (optional)**: Can be added to notify users when video processing is complete.
 - **RabbitMQ**: Facilitates asynchronous communication between services.
-- **MongoDB**: (Reserved for future expansion) Can store logs, processing metadata, or job statuses.
 - **Docker & Docker Compose**: All services run in containers with isolated environments.
 
 ## 🔁 Workflow
